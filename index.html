@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="datfecha">
+        <label for="fechaInput">Fecha</label>
+        <input type="date" id="fechaInput" onchange="mostrarMes()" />
+        <input type="text" id="mesNombre" readonly />
+    </div>
+
+    <div class="datvehi">
+        <label for="placa">PLACA</label>
+        <input type="text" name="placa" id="placa">
+
+        <label for="marca">MARCA</label>
+        <input type="text" name="marca" id="marca">
+
+        <label for="linea">LINEA</label>
+        <input type="text" name="linea" id="linea">
+    </div>
+
+    <div class="dattrab">
+        <label for="orden">N° ORDEN</label>
+        <input type="text" name="orden" id="orden">
+
+        <label for="trabajo">TRABAJO</label>
+        <input type="text" name="trabajo" id="trabajo">
+
+        <label for="adicional">ADICIONAL</label>
+        <input type="text" name="adicional" id="adicional">
+
+        <label for="horas">HORAS</label>
+        <input type="number" name="horas" id="horas">
+    </div>
+
+    <button class="save" id="save">GUARDAR</button>
+
+    <div id="credentials-popup" style="display:none;">
+        <h2>Credenciales</h2>
+        <p id="credentials"></p>
+        <button onclick="closePopup()">Cerrar</button>
+    </div>
+
+    <script src="scrip.js" defer></script>
+</body>
+</html>
